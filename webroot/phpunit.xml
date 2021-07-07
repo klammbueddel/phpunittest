@@ -1,0 +1,14 @@
+<phpunit bootstrap="phpunit.php" verbose="true"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/7.4/phpunit.xsd">
+    <filter>
+        <whitelist>
+            <directory>modules</directory>
+        </whitelist>
+    </filter>
+    <testsuites>
+        <testsuite name="modules">
+            <directory>modules/api/unittests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
